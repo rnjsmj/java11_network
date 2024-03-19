@@ -1,0 +1,16 @@
+package sec3;
+
+import java.io.BufferedReader;
+import java.io.PrintWriter;
+import java.net.Socket;
+import java.util.Scanner;
+
+public class MyClient {
+	public static void main(String[] args) {
+		BufferedReader in = null; //입력
+		PrintWriter out = null; //출력
+		
+		Socket socket = null;
+		Scanner sc = new Scanner(System.in);
+	}
+}

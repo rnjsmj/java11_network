@@ -1,0 +1,28 @@
+package sec2;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.net.Socket;
+import java.util.Scanner;
+
+public class MultiClient {
+
+	public static void main(String[] args) {
+		MultiClient client = new MultiClient();
+		client.start();
+		
+	}
+	
+	public void start() {
+		BufferedReader in = null;
+		Socket socket = null;
+		
+		try {
+			socket = new Socket("127.0.0.1", 8000);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

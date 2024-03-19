@@ -1,0 +1,19 @@
+package sec2;
+ 
+public class ThreadExam1 {
+	
+	public static void firstThread() {
+		System.out.println("첫 번째 쓰레드");
+	}
+	public static void secandaryThread() {
+		System.out.println("첫 번째 쓰레드");
+	}
+	
+
+	public static void main(String[] args) {
+		Thread thread1 = new Thread();
+		Thread thread2 = new Thread();
+
+	}
+
+}

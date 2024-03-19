@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;sec1.ClientGUI&apos; to &apos;GUIClient&apos;&#x0D;&#x0A;- Original project: &apos;test23&apos;&#x0D;&#x0A;- Original element: &apos;sec1.ClientGUI&apos;&#x0D;&#x0A;- Renamed element: &apos;sec1.GUIClient&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ClientGUI&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;sec1{ClientGUI.java[ClientGUI" matchStrategy="1" name="GUIClient" qualified="false" references="true" similarDeclarations="false" stamp="1710746735513" textual="false" version="1.0"/>
+</session>

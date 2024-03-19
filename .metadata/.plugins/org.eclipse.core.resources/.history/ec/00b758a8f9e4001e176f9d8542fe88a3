@@ -1,0 +1,47 @@
+package sec1;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.*;
+
+class LoginGUI extends JFrame implements ActionListener {
+	JPanel client_log = new JPanel();
+	
+	JLabel user_label = new JLabel("유저 입력");
+	JTextField user_input = new JTextField(20);
+	JLabel port_label = new JLabel("포트 입력");
+	JTextField port_input = new JTextField(20);
+	JLabel ip_label = new JLabel("주소 입력");
+	JTextField ip_input = new JTextField(20);
+	
+	
+	JLabel port_warn = new JLabel("(단, 포트번호는 0~65536)");
+	JButton port_btn = new JButton("접속");
+	
+	//ip 입력
+	
+	
+	//port 입력
+	
+	//사용자명 입력
+	//300*60
+	
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+}
+
+public class GUIClient {
+
+	public static void main(String[] args) {
+		new LoginGUI();
+
+	}
+
+}

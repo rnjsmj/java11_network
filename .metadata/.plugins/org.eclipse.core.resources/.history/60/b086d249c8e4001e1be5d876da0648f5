@@ -1,0 +1,38 @@
+package sec3;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.net.Socket;
+import java.net.UnknownHostException;
+import java.util.Scanner;
+
+public class MyClient {
+	public static void main(String[] args) {
+		BufferedReader in = null; //입력
+		PrintWriter out = null; //출력
+		
+		Socket socket = null;
+		Scanner sc = new Scanner(System.in);
+		
+		try {
+			socket = new Socket("127.0.0.1", 6000);//현재 local 컴퓨터, port
+			in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+			out = new PrintWriter(socket.getOutputStream());
+			
+			System.out.println("전송하기 >>> ");
+			String outMsg = sc.nextLine();
+			out.println(outMsg);
+			out.flush();
+			if ("Quit".equalsIgnoreCase(outMsg)) break;
+			System.out.println();
+			
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} 
+		
+	}
+}

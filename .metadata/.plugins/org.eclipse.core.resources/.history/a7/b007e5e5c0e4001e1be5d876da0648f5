@@ -1,0 +1,48 @@
+package sec2;
+
+// 발생 -> (실행대기:Runnable) 점유 -> 대기 -> 기동 ->종료
+public class ThreadExam1 {
+	
+	public static void firstThread() {
+		System.out.println("첫 번째 쓰레드");
+	}
+	public static void secondaryThread() {
+		for (int i=0; i<10; i++) {
+			System.out.println(i);
+			try {
+				Thread.sleep(1000);
+			}catch(InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+	
+
+	public static void main(String[] args) {
+		Thread thread1 = new Thread(new Runnable() { //Runnable interface
+
+			@Override
+			public void run() {
+				firstThread(); 
+			}
+			
+		});
+		
+		thread1.run(); // 바로 실행
+		thread1.start(); //준비상태 >> 다른 작업 이후 실행
+		System.out.println(thread1.getName()); //>>>Thread-0 ; 첫번째 쓰레드
+		
+		Thread thread2 = new Thread(new Runnable() {
+
+			@Override
+			public void run() {
+				secondaryThread(); 
+			}
+			
+		});
+		thread2.run(); 
+		thread2.start(); 
+		System.out.println(thread2.getName()); 
+	}
+
+}

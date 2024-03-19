@@ -1,0 +1,9 @@
+package sec2;
+
+import java.io.PrintWriter;
+import java.util.List;
+
+public class ReceiveThread extends Thread {
+	static List<PrintWriter> list;
+
+}

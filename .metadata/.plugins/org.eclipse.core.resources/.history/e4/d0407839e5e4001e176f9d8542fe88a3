@@ -1,0 +1,13 @@
+package sec2;
+
+public class MultiServer {
+
+	public static void main(String[] args) {
+		MultiServer multi = new MultiServer();
+
+	}
+	public void start() {
+		
+	}
+
+}

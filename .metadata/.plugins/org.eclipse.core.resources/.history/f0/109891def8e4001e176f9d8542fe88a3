@@ -1,0 +1,14 @@
+package sec1;
+
+class LoginGUI extends JFrame implements ActionListener {
+	
+}
+
+public class GUIClient {
+
+	public static void main(String[] args) {
+		new LoginGUI();
+
+	}
+
+}

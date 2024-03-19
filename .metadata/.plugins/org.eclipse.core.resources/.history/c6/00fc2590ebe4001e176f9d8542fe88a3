@@ -1,0 +1,15 @@
+package sec2;
+
+public class MultiClient {
+
+	public static void main(String[] args) {
+		MultiClient client = new MultiClient();
+		client.start();
+
+	}
+	
+	public void start() {
+		PrintStream out = new PrintStream(socket.gotOutputStream());
+	}
+
+}
