@@ -34,6 +34,9 @@ public class ClientBack extends Thread {
 			out = new DataOutputStream(socket.getOutputStream());
 			in = new DataInputStream(socket.getInputStream());
 			out.writeUTF(NickName);
+//			NickNameList.add(NickName);//*
+//			chatgui.AppendUserList(NickNameList); //*
+			
 			while (in != null) { 
 				Message = in.readUTF();
 				if (Message.contains("+++닉네임의시작+++")) { 
@@ -43,6 +46,9 @@ public class ClientBack extends Thread {
 				} else if (Message.contains("님이 입장하셨습니다.\n")) {
 					NickNameList.clear();
 					chatgui.UserList.setText(null);
+					System.out.println(Message);
+					NickNameList.add(Message.substring(0, Message.trim().length()-11)); //****
+					chatgui.AppendUserList(NickNameList); //*
 					chatgui.AppendMessage(Message);
 				} else if (Message.contains("님이 퇴장하셨습니다.\n")) {
 					NickNameList.clear();
