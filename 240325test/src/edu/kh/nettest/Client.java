@@ -11,23 +11,26 @@ import java.util.Scanner;
 public class Client {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		
 		try {
 			String ip = InetAddress.getLocalHost().getHostAddress();
-			Socket socket = new Socket(ip, 3000);
-			System.out.println("연결");
+			//Socket s = new Socket();
+			//*****
+			//2.
+			// *여러 클래스에서 문제점이 발생한 경우 정확한 클래스명과 행 기제*
+			//Socket 객체를 생성하는 과정에서 ServerSocket의 ip 주소와 port 번호가
+			// 지정되지 않아 통신을 할 수 없다.
+			//*****
+			//=> 
+			Socket s = new Socket(ip, 3000);
 			
-			while(true) {
-				if (sc.next().equalsIgnoreCase("quit")) {
-					sc.close();
-					socket.close();
-					break;
-				}
-			}
+			
 			
 		} catch (IOException e) {
 			e.printStackTrace();
 			System.out.println("[소켓 연결 오류]");
+		} finally {
+			
 		}
 	}
 

@@ -6,8 +6,12 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="label"/>
+		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value="f"/>
+			<item value="ul&gt;"/>
+			<item value="mem2"/>
+			<item value="mem1"/>
 			<item value="lable"/>
 			<item value="utf"/>
 			<item value="getuser"/>
@@ -19,12 +23,12 @@
 			<item value="append"/>
 			<item value="userList"/>
 			<item value="Append"/>
-			<item value="user"/>
-			<item value="userLabel"/>
-			<item value="getAddress"/>
-			<item value="nickNameList"/>
 		</list>
 		<list key="replacehistory">
+			<item value=""/>
+			<item value="mem"/>
+			<item value="mem3"/>
+			<item value="mem2"/>
 			<item value="label"/>
 			<item value="Nw"/>
 			<item value="nw"/>
